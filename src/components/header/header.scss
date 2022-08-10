@@ -245,6 +245,7 @@
 .nav-link:hover {
   color: var(--color-light);
 }
+
 .dropdown-menu[data-bs-popper] {
   top: 98%;
 }
@@ -326,7 +327,7 @@
     }
   }
   .nav-item:hover .dropdown-menu {
-    display: none;
+    display: block;
   }
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
