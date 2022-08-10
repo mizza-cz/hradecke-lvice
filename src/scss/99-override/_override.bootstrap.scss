@@ -1,0 +1,19 @@
+/*! purgecss start ignore */
+.ml-md-4,
+.mx-md-4 {
+  margin-left: 20px !important;
+}
+@media (min-width: 992px) {
+  .ml-lg-3,
+  .mx-lg-3 {
+    margin-left: 15px !important;
+  }
+}
+@media (min-width: 992px) {
+  .mr-lg-2,
+  .mx-lg-2 {
+    margin-right: 10px !important;
+  }
+}
+
+/*! purgecss end ignore */

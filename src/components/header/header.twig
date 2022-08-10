@@ -1,0 +1,121 @@
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+      <nav class="navbar navbar-expand-lg">
+        <a class="header__logo" href="">
+          <img src="images/content/logo.png" loading="lazy" alt="logo" />
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav navbar-nav--left">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="klub"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Klub
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="klub">
+                <li><a class="dropdown-item" href="#">Historie</a></li>
+                <li><a class="dropdown-item" href="#">Úspěchy</a></li>
+                <li><a class="dropdown-item" href="#">Reprezentace</a></li>
+                <li><a class="dropdown-item" href="#">Kontakty</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="a-tym"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                A-tým
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="a-tym">
+                <li><a class="dropdown-item" href="#">Soupiska</a></li>
+                <li><a class="dropdown-item" href="#">Realizační tým</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="zapasy"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Zápasy
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="zapasy">
+                <li><a class="dropdown-item" href="#">Zápasy</a></li>
+                <li><a class="dropdown-item" href="#">Tabulka</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="mladez"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Mládež
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mladez">
+                <li><a class="dropdown-item" href="#">Juniorky U19</a></li>
+                <li><a class="dropdown-item" href="#">Kadetky U17</a></li>
+                <li><a class="dropdown-item" href="#">U15</a></li>
+                <li><a class="dropdown-item" href="#">U14</a></li>
+                <li><a class="dropdown-item" href="#">Minižákyně U13</a></li>
+                <li><a class="dropdown-item" href="#">Minižákyně U12</a></li>
+                <li><a class="dropdown-item" href="#">Minižákyně U11</a></li>
+                <li><a class="dropdown-item" href="#">Minižákyně U10</a></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="navbar-nav__logo">
+            <a class="header__logo" href="">
+              <img src="images/content/logo.png" loading="lazy" alt="logo" />
+            </a>
+          </div>
+          <ul class="navbar-nav navbar-nav--right">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Galerie </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Partneři </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="fanzona"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fanzóna
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="fanzona">
+                <li><a class="dropdown-item" href="#">Fanlub</a></li>
+                <li><a class="dropdown-item" href="#">Ptejte se</a></li>
+              </ul>
+            </li>
+          </ul>
+          {% include "@components/social/social.twig" %}
+        </div>
+        <button class="c-header__opener js-header__opener" type="button">
+          Menu
+          <span></span>
+        </button>
+      </nav>
+    </div>
+  </div>
+</header>

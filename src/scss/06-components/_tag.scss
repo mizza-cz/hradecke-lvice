@@ -1,0 +1,17 @@
+.tag {
+  font-size: 12px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  background-color: var(--color-yellow);
+  width: max-content;
+  padding: 6px 20px;
+  margin: 0px auto 16px;
+  color: var(--color-dark);
+  text-transform: uppercase;
+  transform: rotate(0deg) skew(-10deg, 0deg) translate(0, 0);
+  border-radius: 16px 0px;
+  text-transform: uppercase;
+}

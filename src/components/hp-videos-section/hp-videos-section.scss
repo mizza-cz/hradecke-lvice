@@ -1,0 +1,15 @@
+.hp-videos-section {
+  margin-bottom: 32px;
+  iframe {
+    padding: 8px;
+    background-color: var(--color-light);
+    display: block;
+    margin-bottom: 16px;
+    height: 188px;
+  }
+  p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 125%;
+  }
+}

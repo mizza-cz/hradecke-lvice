@@ -1,0 +1,109 @@
+.hp-games {
+  &__item {
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.04);
+    background-color: var(--color-light);
+    display: flex;
+    align-items: flex-end;
+    padding: 34px 80px 34px 16px;
+    border-radius: 88px 0;
+    @include media-breakpoint-down(xxl) {
+      padding-right: 48px;
+    }
+    @include media-breakpoint-down(xl) {
+      flex-direction: column;
+      padding-top: 24px;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 48px;
+    }
+  }
+  &__inner {
+    display: flex;
+    align-items: center;
+    @include media-breakpoint-down(xl) {
+      align-items: start;
+    }
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      .col-auto {
+        width: 100%;
+      }
+    }
+
+    .h6 {
+      color: var(--color-gray);
+      text-transform: uppercase;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 900;
+    color: var(--color-gray);
+    transform: rotate(-77deg);
+    max-width: 70px;
+    text-transform: uppercase;
+    line-height: 100%;
+    margin-bottom: 16px;
+    @include media-breakpoint-down(xl) {
+      transform: rotate(0);
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__logo {
+    padding: 0 16px;
+    padding-right: 28px;
+    @include media-breakpoint-down(sm) {
+      padding: 16px;
+      img {
+        margin: 0 auto;
+      }
+    }
+    img {
+      max-width: 94px;
+      height: 90px;
+      object-fit: contain;
+    }
+  }
+  &__date {
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--color-gray);
+    max-width: 120px;
+    line-height: 125%;
+    margin-left: auto;
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 8px;
+    }
+  }
+  &__result {
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 125%;
+    color: var(--color-green);
+    max-width: 32px;
+    margin-left: auto;
+    @include media-breakpoint-down(xl) {
+      width: 100%;
+      max-width: 100%;
+      margin-top: 8px;
+    }
+    a {
+      text-decoration-color: transparent;
+    }
+
+    &:hover a {
+      text-decoration-color: inherit;
+      transition: text-decoration-color 0.3s;
+    }
+  }
+}

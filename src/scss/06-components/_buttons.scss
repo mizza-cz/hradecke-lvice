@@ -1,0 +1,23 @@
+.btn {
+  border-radius: 32px 0;
+  border: none;
+  outline: none;
+  transition: transform 0.3s;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 0 auto;
+  width: fit-content;
+  display: block;
+  padding: 12px 32px;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.btn-primary {
+  background-color: var(--color-red);
+  color: var(--color-light);
+  &:hover {
+    background-color: var(--color-red);
+  }
+}
