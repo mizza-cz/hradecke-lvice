@@ -1,0 +1,12 @@
+.gallery {
+  a {
+    aspect-ratio: 256/200;
+    display: block;
+    img {
+      object-fit: cover;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

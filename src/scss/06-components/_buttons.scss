@@ -1,5 +1,4 @@
 .btn {
-  border-radius: 32px 0;
   border: none;
   outline: none;
   transition: transform 0.3s;
@@ -11,8 +10,11 @@
   display: block;
   padding: 12px 32px;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
+}
+.btn-radius {
+  border-radius: 32px 0;
 }
 .btn-primary {
   background-color: var(--color-red);
@@ -20,4 +22,15 @@
   &:hover {
     background-color: var(--color-red);
   }
+}
+.btn.btn-primary {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  display: block;
+  padding: 0;
+  margin: 0;
 }

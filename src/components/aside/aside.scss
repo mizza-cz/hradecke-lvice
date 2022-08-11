@@ -1,0 +1,92 @@
+.aside {
+  width: 320px;
+  position: relative;
+  z-index: 10;
+  @include media-breakpoint-down(lg) {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .h3,
+  h3 {
+    color: var(--color-red);
+  }
+  .submenu {
+    padding: 22px 31px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.04);
+    background-color: var(--color-light);
+    ul {
+      margin-top: 14px;
+      border-top: solid 2px rgba(143, 162, 180, 0.13);
+      padding-left: 0px;
+    }
+    li {
+      margin-bottom: 0px;
+      padding: 0px 26px;
+      border-bottom: solid 2px rgba(143, 162, 180, 0.13);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 2.78;
+      &::before {
+        content: "";
+        background-color: var(--color-gray);
+        display: inline-block;
+        position: relative;
+        width: 8px;
+        height: 8px;
+        left: -12px;
+        top: -1px;
+      }
+      a {
+        text-decoration-color: transparent;
+        transition: text-decoration-color 0.3s;
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
+    }
+  }
+  &-game {
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 24px 0 rgba(0, 0, 0, 0.04);
+    background-color: var(--color-light);
+    &__logo {
+      padding-left: 0px;
+      padding-right: 18px;
+      img {
+        max-width: 60px;
+      }
+    }
+    &__result {
+      span {
+        display: block;
+        padding: 4px 0;
+      }
+    }
+    &__name {
+      span {
+        display: block;
+        font-size: 14px;
+        line-height: 115%;
+        font-weight: 900;
+        margin: 4px 0;
+      }
+    }
+    &__date {
+      font-size: 14px;
+      font-weight: 900;
+      color: var(--color-gray);
+      text-transform: uppercase;
+      line-height: 1;
+      margin-bottom: 16px;
+      span {
+        display: block;
+        font-size: 12px;
+        line-height: 1;
+        margin-top: 4px;
+      }
+    }
+  }
+}

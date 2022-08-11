@@ -76,7 +76,7 @@
     font-size: 24px;
     font-weight: 900;
     color: var(--color-gray);
-    max-width: 120px;
+    max-width: 140px;
     line-height: 125%;
     margin-left: auto;
     @include media-breakpoint-down(xl) {
@@ -106,4 +106,10 @@
       transition: text-decoration-color 0.3s;
     }
   }
+}
+.win {
+  color: var(--color-green);
+}
+.lose {
+  color: var(--color-red);
 }

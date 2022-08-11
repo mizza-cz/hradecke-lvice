@@ -1,0 +1,39 @@
+.breadcrumb {
+  padding-top: 120px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: 40px;
+  @include media-breakpoint-down(xl) {
+    padding-top: 140px;
+  }
+  &-item + &-item {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0.125rem;
+      height: 0.6875rem;
+      -webkit-transform: rotate(15deg);
+      transform: rotate(15deg);
+      left: 0;
+      top: 0.25rem;
+      background-color: var(--color-dark);
+    }
+  }
+  &-item {
+    padding: 0 24px;
+    a {
+      color: var(--color-red);
+      position: relative;
+      text-decoration-color: transparent;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+    &:not(:last-child) a {
+      color: var(--color-dark);
+    }
+  }
+}
