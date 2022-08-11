@@ -1,0 +1,90 @@
+<section class="archive-section pb-5">
+  <div class="container">
+    <ul class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Hradecké Lvice</a></li>
+      <li class="breadcrumb-item"><a href="#">Archiv článků</a></li>
+    </ul>
+    <div class="row">
+      <div class="col-12 col-lg mr-lg-4 pl-lg-2 pr-0">
+        <h1 class="h1 mb-10">Archiv článků</h1>
+        <div class="search-form mb-5">
+          <form method="get">
+            <div class="form-row">
+              <div class="form-group col-md-4 col-12">
+                <label
+                  >Vyhledávání textu
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="text"
+                    id="inputCity"
+                  />
+                </label>
+              </div>
+              <div class="form-group col-md-4 col-12">
+                <label class="o-select">
+                  Měsíc:
+                  <select class="js-select" name="file" id="inputFiles">
+                    <option value="">Vyberte</option>
+                    <option value="">8/2022</option>
+                    <option value="">8/2022</option>
+                    <option value="">8/2022</option>
+                    <option value="">8/2022</option>
+                    <option value="">8/2022</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-group col-md-2 col-12">
+                <label class="o-select">
+                  Kategorie:
+                  <select class="js-select">
+                    <option value="">Všechny</option>
+                    <option value="tipsport">2020/21</option>
+                    <option value="tipsport">2019/20</option>
+                    <option value="tipsport">2018/19</option>
+                    <option value="tipsport">2017/18</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-group pt-md-4 col-md-2 mt-auto">
+                <button type="submit" class="btn btn-primary">Hledat</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        {% include "@components/post-article/post-article.twig" %} {% include
+        "@components/post-article/post-article.twig" %} {% include
+        "@components/post-article/post-article.twig" %} {% include
+        "@components/post-article/post-article.twig" %} {% include
+        "@components/post-article/post-article.twig" %} {% include
+        "@components/post-article/post-article.twig" %} {% include
+        "@components/post-article/post-article.twig" %} {% include
+        "@components/post-article/post-article.twig" %}
+        <nav aria-label="Další stránky">
+          <ul
+            class="pagination d-flex flex-wrap pagination-flat pagination-success"
+          >
+            <li class="page-item active">
+              <a class="page-link" href="#" data-abc="true">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">2</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">3</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true">4</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#" data-abc="true"> »</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      {% include "@components/aside/aside.twig" %}
+    </div>
+    <h2 class="h2 mb-10">Doporučené články</h2>
+  </div>
+  {% include "@components/hp-posts-section/hp-posts-section.twig" %}
+</section>
