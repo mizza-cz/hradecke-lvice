@@ -39,6 +39,7 @@
     float: left;
     height: 622px;
     padding: 0;
+
     @include media-breakpoint-down(lg) {
       width: 100% !important;
       height: 425px;
