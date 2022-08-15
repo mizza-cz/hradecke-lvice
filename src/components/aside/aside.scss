@@ -2,6 +2,7 @@
   width: 320px;
   position: relative;
   z-index: 10;
+
   @include media-breakpoint-down(lg) {
     max-width: 600px;
     margin: 0 auto;
@@ -28,6 +29,12 @@
       font-size: 18px;
       font-weight: 700;
       line-height: 2.78;
+      &.active {
+        color: var(--color-red);
+        &::before {
+          background-color: var(--color-red);
+        }
+      }
       &::before {
         content: "";
         background-color: var(--color-gray);

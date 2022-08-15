@@ -1,4 +1,7 @@
 .o-content {
+  .gallery img {
+    margin: 0;
+  }
   &::after {
     display: table;
     clear: both;
@@ -13,6 +16,7 @@
   h2 {
     margin-top: 40px;
     margin-bottom: 16px;
+    color: var(--color-red);
   }
   p {
     font-size: 16px;

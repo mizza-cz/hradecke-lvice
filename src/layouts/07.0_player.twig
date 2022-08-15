@@ -1,0 +1,16 @@
+{% extends "@components/base/base.twig" %} {% set title = "07.0_player" %} {%
+block main %}
+<div class="c-player-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-8 mr-lg-4 pr-lg-0 pr-md-0 pl-lg-2 pl-md-0">
+        {% include "@components/player-section/player-section.twig" %} {%
+        include "@components/player-detail-section/player-detail-section.twig"
+        %}
+      </div>
+      {% include "@components/aside/aside-players.twig" %}
+    </div>
+  </div>
+</div>
+
+{% include "@components/hp-posts-section/posts-section.twig" %} {% endblock %}
