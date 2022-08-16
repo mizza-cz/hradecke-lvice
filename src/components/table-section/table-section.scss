@@ -1,0 +1,32 @@
+.c-table-section {
+  .o-content td + td {
+    border-left: none;
+  }
+  td img {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+  }
+  th:nth-child(3) {
+    padding-left: 8px;
+  }
+  th:first-child,
+  td:first-child {
+    padding-right: 8px;
+  }
+  td {
+    white-space: nowrap;
+    vertical-align: middle;
+    &:nth-child(2) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &:nth-child(3) {
+      padding-left: 8px;
+    }
+  }
+}
+.lvice {
+  color: var(--color-red);
+  font-weight: 700;
+}
