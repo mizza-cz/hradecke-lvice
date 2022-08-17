@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>07.0_player - Hradecké Lvice</title>
+	<title>11.0_players - Hradecké Lvice</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap" rel="stylesheet" />
@@ -146,127 +146,169 @@
 			</div>
 		</header>
 		<main class="main" aria-label="Hlavní obsah">
-			<div class="c-player-wrapper">
+			<section class="c-players-section">
 				<div class="container">
-					<div class="row">
-						<div class="col-12 col-lg-8 mr-lg-4 pr-lg-0 pr-md-0 pl-lg-2 pl-md-0">
-							<section class="c-player-section">
-								<div class="c-player">
-									<div class="c-player-photo">
-										<img src="./images/content/slider/1.png" alt="" />
-									</div>
-									<div class="c-player-info">
-										<div class="tag">PF</div>
-										<h1 class="h1">
-											<span>Charlotte</span>
-											Velichová
-										</h1>
-										<ul class="c-player-info__list">
-											<li>
-												<span>Datum narození</span>
-												25.4.2004
-											</li>
-											<li>
-												<span>Výška</span>
-												177
-											</li>
-											<li>
-												<span>Národnost</span>
-												CZE
-											</li>
-										</ul>
-									</div>
+					<ul class="breadcrumb">
+						<li class="breadcrumb-item"><a href="#">Hradecké Lvice</a></li>
+						<li class="breadcrumb-item"><a href="#">Soupiska</a></li>
+					</ul>
+					<div class="c-table-section">
+						<div class="row">
+							<div class="col-12 col-lg mr-lg-4 pl-lg-2 pr-0 mb-10">
+								<h1 class="h1 mb-10">Soupiska</h1>
+								<div class="search-form mb-10">
+									<form method="get">
+										<div class="form-row">
+											<div class="form-group col-md-4 col-12">
+												<label class="o-select">
+													Sezona:
+													<select class="js-select" name="file" id="inputFiles">
+														<option value="">Vyberte</option>
+														<option value="">kategorie</option>
+														<option value="">kategorie</option>
+														<option value="">kategorie</option>
+														<option value="">kategorie</option>
+														<option value="">kategorie</option>
+													</select>
+												</label>
+											</div>
+										</div>
+									</form>
 								</div>
-							</section>
-							<section class="c-player-detail-section mb-10">
-								<div class="container">
-									<div class="o-content">
-										<h2>O hráči</h2>
-										<p>
-											Hrající legenda nymburského klubu. Přišel v roce 2007 z Brna a od té
-											doby slavil v každé sezoně titul. S dvanácti mistrovskými poháry je
-											českým rekordmanem. Na kontě má nejvíce zápasů i bodů v nymburském
-											dresu.
-										</p>
-										<p>
-											Hrající legenda nymburského klubu. Přišel v roce 2007 z Brna a od té
-											doby slavil v každé sezoně titul. S dvanácti mistrovskými poháry je
-											českým rekordmanem. Na kontě má nejvíce zápasů i bodů v nymburském
-											dresu.
-										</p>
-										<p>
-											Hrající legenda nymburského klubu. Přišel v roce 2007 z Brna a od té
-											doby slavil v každé sezoně titul. S dvanácti mistrovskými poháry je
-											českým rekordmanem. Na kontě má nejvíce zápasů i bodů v nymburském
-											dresu.
-										</p>
-										<h2>Fotogalerie hráče</h2>
-										<div class="gallery row js-gallery mb-10">
-											<figure class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
-												<a href="images/content/1.jpeg" data-size="1024x1024">
-													<img src="images/content/1.jpeg" loading="lazy" alt="" />
-												</a>
-											</figure>
-											<figure class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
-												<a href="images/content/2.jpeg" data-size="1024x1024">
-													<img src="images/content/2.jpeg" loading="lazy" alt="" />
-												</a>
-											</figure>
-											<figure class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
-												<a href="images/content/3.jpeg" data-size="1024x1024">
-													<img src="images/content/3.jpeg" loading="lazy" alt="" />
-												</a>
-											</figure>
-											<figure class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
-												<a href="images/content/1.jpeg" data-size="1024x1024">
-													<img src="images/content/1.jpeg" loading="lazy" alt="" />
-												</a>
-											</figure>
-											<figure class="col-12 col-sm-6 col-md-4 col-lg-3 p-3">
-												<a href="images/content/2.jpeg" data-size="1024x1024">
-													<img src="images/content/2.jpeg" loading="lazy" alt="" />
-												</a>
-											</figure>
+								<div class="o-content">
+									<table>
+										<thead>
+											<tr>
+												<th><a href="#">#</a></th>
+												<th><a href="#">Jméno hráče</a></th>
+												<th><a href="#">Narozen</a></th>
+												<th><a href="#">Věk</a></th>
+												<th><a href="#">Výška</a></th>
+												<th><a href="#">Post</a></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><strong>1</strong></td>
+												<td>Simona Růžková</td>
+												<td>26.9.1995</td>
+												<td>26</td>
+												<td>183</td>
+												<td>PF</td>
+											</tr>
+											<tr>
+												<td><strong>1</strong></td>
+												<td>Simona Růžková</td>
+												<td>26.9.1995</td>
+												<td>26</td>
+												<td>183</td>
+												<td>PF</td>
+											</tr>
+											<tr>
+												<td><strong>1</strong></td>
+												<td>Simona Růžková</td>
+												<td>26.9.1995</td>
+												<td>26</td>
+												<td>183</td>
+												<td>PF</td>
+											</tr>
+											<tr>
+												<td><strong>1</strong></td>
+												<td>Simona Růžková</td>
+												<td>26.9.1995</td>
+												<td>26</td>
+												<td>183</td>
+												<td>PF</td>
+											</tr>
+											<tr>
+												<td><strong>1</strong></td>
+												<td>Simona Růžková</td>
+												<td>26.9.1995</td>
+												<td>26</td>
+												<td>183</td>
+												<td>PF</td>
+											</tr>
+											<tr>
+												<td><strong>1</strong></td>
+												<td>Simona Růžková</td>
+												<td>26.9.1995</td>
+												<td>26</td>
+												<td>183</td>
+												<td>PF</td>
+											</tr>
+											<tr>
+												<td><strong>1</strong></td>
+												<td>Simona Růžková</td>
+												<td>26.9.1995</td>
+												<td>26</td>
+												<td>183</td>
+												<td>PF</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<aside class="col-auto aside">
+								<div class="submenu">
+									<h3 class="h3 mb-4">Klub</h3>
+									<ul>
+										<li>
+											<a href="#">Historie</a>
+										</li>
+										<li>
+											<a href="#">Úspěchy</a>
+										</li>
+										<li>
+											<a href="#">Reprezentace</a>
+										</li>
+										<li>
+											<a href="#">Kontakty</a>
+										</li>
+									</ul>
+								</div>
+								<div class="aside-game">
+									<h3 class="h3 mb-4">Poslední zápas</h3>
+									<div class="row pb-4">
+										<div class="col-12 aside-game__date">
+											čtvrtek 26.5. - 18:00
+											<span>Kooperativa NBL 2021/22</span>
+										</div>
+										<div class="col-auto aside-game__logo">
+											<img src="images/content/team-2.png" loading="lazy" alt="" />
+										</div>
+										<div class="col aside-game__name">
+											<span>Levhartice Chomutov</span>
+											<span>Hradecké Lvice</span>
+										</div>
+										<div class="col-auto aside-game__result">
+											<a class="win" href="#">
+												<span>65</span>
+												<span>67</span>
+											</a>
 										</div>
 									</div>
 								</div>
-							</section>
+								<div class="aside-game">
+									<h3 class="h3 mb-4">Následující zápas</h3>
+									<div class="row pb-4">
+										<div class="col-12 aside-game__date">
+											čtvrtek 26.5. - 18:00
+											<span>Kooperativa NBL 2021/22</span>
+										</div>
+										<div class="col-auto aside-game__logo">
+											<img src="images/content/team-1.png" loading="lazy" alt="" />
+										</div>
+										<div class="col aside-game__name">
+											<span>Levhartice Chomutov</span>
+											<span>Hradecké Lvice</span>
+										</div>
+									</div>
+								</div>
+							</aside>
 						</div>
-						<aside class="col-auto aside">
-							<div class="submenu">
-								<h3 class="h3 mb-4">Ostatní hráči</h3>
-								<ul>
-									<li class="active">
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-									<li>
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-									<li>
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-									<li>
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-									<li>
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-									<li>
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-									<li>
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-									<li>
-										<a href="#">Lucie Bolardtová</a>
-									</li>
-								</ul>
-							</div>
-						</aside>
 					</div>
 				</div>
-			</div>
-
+			</section>
 			<section class="hp-posts-section pb-10">
 				<div class="container">
 					<h2 class="h2 mb-10">Doporučené články</h2>

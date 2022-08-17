@@ -1,0 +1,11 @@
+{% extends "@components/base/base.twig" %} {% set title = "10.0_guidepost" %} {%
+block main %} {% include "@components/topstory-section/topstory-section.twig" %}
+{% include "@components/hp-games/hp-games.twig" %}
+<div class="mb-10">
+  <a class="btn btn-primary btn-radius" href="/build/08.0_table.html"
+    >všechny zápasy
+  </a>
+</div>
+{% include "@components/pubs/pubs.twig" %} {% include
+"@components/guidepost-section/guidepost-section.twig" %} {% include
+"@components/hp-posts-section/posts-section.twig" %} {% endblock %}
