@@ -1,5 +1,4 @@
 .o-content {
-  
   .gallery img {
     margin: 0;
   }
@@ -101,10 +100,10 @@
     }
   }
   td + td {
-    border-left: 1px solid var(--color-gray);
+    border-left: 0.125rem solid rgba(143, 162, 180, 0.13);
   }
   td {
-    border-bottom: 1px solid var(--color-gray);
+    border-bottom: 0.125rem solid rgba(143, 162, 180, 0.13);
     padding-bottom: 16px;
     padding-top: 16px;
   }
