@@ -22,14 +22,14 @@
       }
     }
     &-logo {
-      padding-right: 25px;
+      padding-right: 16px;
       padding-left: 0px;
       @include media-breakpoint-down(sm) {
         display: none;
       }
       img {
-        max-width: 60px;
-        max-height: 67px;
+        width: 80px;
+        height: 80px;
       }
     }
     &-result {
@@ -45,7 +45,7 @@
       }
     }
     &-date {
-      padding-right: 50px;
+      padding-right: 20px;
       font-weight: 900;
       line-height: 1.38;
       text-transform: uppercase;
