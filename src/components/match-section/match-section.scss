@@ -1,0 +1,105 @@
+.matches-section {
+  margin-bottom: 40px;
+}
+.matches {
+  &__item {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 24px 44px 28px 28px;
+    border-bottom: solid 1px rgba(143, 162, 180, 0.13);
+    @include media-breakpoint-down(md) {
+      padding: 14px 12px 14px 12px;
+    }
+    &-team {
+      span {
+        display: block;
+        margin-top: 8px;
+        color: var(--color-gray);
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 12px;
+      }
+    }
+    &-logo {
+      padding-right: 16px;
+      padding-left: 0px;
+      @include media-breakpoint-down(sm) {
+        display: none;
+      }
+      img {
+        width: 80px;
+        height: 80px;
+        object-fit: fill;
+      }
+    }
+    &-result {
+      color: var(--color-gray);
+      a:hover {
+        text-decoration-color: transparent;
+      }
+      span {
+        display: block;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: normal;
+      }
+    }
+    &-date {
+      padding-right: 20px;
+      font-weight: 900;
+      line-height: 1.38;
+      text-transform: uppercase;
+      text-align: center;
+
+      @include media-breakpoint-down(md) {
+        width: 100%;
+        text-align: left;
+        padding: 0;
+      }
+      span {
+        font-weight: 700;
+        display: block;
+        @include media-breakpoint-down(md) {
+          display: inline-block;
+          margin-bottom: 8px;
+        }
+      }
+      .time {
+        color: var(--color-gray);
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: solid 1px rgba(143, 162, 180, 0.13);
+    li {
+      color: var(--color-gray);
+      text-transform: uppercase;
+      font-weight: 900;
+      position: relative;
+      padding: 0 8px 12px;
+      margin: 0 8px;
+      border-bottom: 3px solid transparent;
+      transition: border-bottom 0.3s;
+      @include media-breakpoint-down(sm) {
+        border-bottom: none !important;
+      }
+      &:hover {
+        border-bottom: 3px solid var(--color-gray);
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+    .active {
+      color: var(--color-red);
+      border-bottom: 3px solid var(--color-red);
+      &:hover {
+        border-bottom: 3px solid var(--color-red);
+      }
+    }
+  }
+}
