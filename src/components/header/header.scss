@@ -53,6 +53,8 @@
         box-shadow: -1px 0px 34px -1px rgba(0, 0, 0, 0.11);
         transition: opacity 0.3s, visibility 0.3s;
         flex-wrap: wrap;
+        padding-bottom: 20px;
+        padding-right: 16px;
       }
       @include media-breakpoint-down(sm) {
         width: 100% !important;
@@ -163,6 +165,7 @@
     padding: 0.25rem 0;
   }
   span {
+    transition: all 0.3s;
     width: 24px;
     height: 3px;
     background: #fff;
@@ -172,6 +175,7 @@
     margin-left: 16px;
     &::before,
     &::after {
+      transition: all 0.3s;
       content: "";
       position: absolute;
       width: 24px;
@@ -210,6 +214,8 @@
   @include media-breakpoint-down(xl) {
     text-align: right;
     padding-right: 24px;
+    font-size: 20px;
+    padding-bottom: 16px;
   }
 }
 .nav-item {
@@ -321,6 +327,14 @@
       left: 0;
       padding-left: 0;
       padding-right: 0;
+      font-size: 16px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      &:hover,
+      &:focus {
+        background-color: var(--color-red);
+        color: var(--color-light);
+      }
     }
   }
 }
@@ -336,5 +350,17 @@
   }
   .navbar .nav-item .dropdown-menu {
     margin-top: 0;
+  }
+}
+.c-header__opener.is-open {
+  span {
+    border-color: var(--color-red);
+    background: var(--color-red);
+  }
+  span:before {
+    transform: rotate(45deg);
+  }
+  span:after {
+    transform: rotate(-45deg);
   }
 }

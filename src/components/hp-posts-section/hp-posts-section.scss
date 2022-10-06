@@ -6,16 +6,18 @@
   }
   &__img {
     height: 228px;
-    border-radius: 7.25rem 0;
+
     width: 100%;
     overflow: hidden;
     position: relative;
     margin-bottom: 16px;
+    border-radius: 7.25rem 0;
+    transition: all 0.3s;
     img {
+      transition: all 0.3s;
       width: 100%;
       object-fit: cover;
       height: 100%;
-      transition: transform 0.3s;
     }
   }
   &__item {
@@ -30,8 +32,8 @@
       text-decoration: none;
 
       &:hover {
-        img {
-          transform: scale(1.1);
+        .hp-posts__img {
+          transform: scale(1.05);
         }
         .h3 {
           text-decoration-color: inherit;
