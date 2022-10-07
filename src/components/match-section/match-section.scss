@@ -103,3 +103,37 @@
     }
   }
 }
+.article__feedback {
+  margin-top: 24px !important;
+  margin-bottom: 40px;
+  padding-top: 20px;
+}
+.article__feedback-image img {
+  width: 100%;
+  max-width: 100px;
+  border-radius: 50%;
+}
+.article__feedback-name {
+  font-weight: 900;
+  margin-bottom: 8px;
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+}
+.article__feedback-header {
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: var(--color-gray);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 1rem;
+  @media (max-width: 576px) {
+    text-align: center;
+  }
+}
+@media (min-width: 576px) {
+  .article__feedback-image {
+    text-align: center;
+    margin-bottom: 0;
+  }
+}
